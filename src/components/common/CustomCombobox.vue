@@ -160,7 +160,7 @@ watch(() => dataValue.value, () => {
           </div>
           <span v-else>Select framework...</span>
           <div class="flex flex-end items-center gap-2">
-            <div v-show="props.showClear  && dataValue.length > 0"
+            <div v-show="props.showClear && open && dataValue.length > 0"
                  class="bg-[#dcdcdc] w-4 h-4 grid place-items-center rounded-full"
                  @click="(e) => handleClearValue(e)"
             >
